@@ -1,0 +1,65 @@
+body {
+    background-image: url("../assets/images/img2.jpeg");
+    background-size: cover;
+}
+
+#overlay {
+    position: fixed;
+    /* Sit on top of the page content */
+    display: none;
+    /* Hidden by default */
+    width: 100%;
+    /* Full width (cover the whole page) */
+    height: 100%;
+    /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Black background with opacity */
+    z-index: 2;
+    /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer;
+    /* Add a pointer on hover */
+}
+
+button.pause {
+    display: none;
+}
+
+.navbar {
+    margin-bottom: 0px;
+    min-height: 50px;
+}
+.navbar-default{
+        border-radius: 20px;
+    background-image: none;
+    box-shadow: none;background-color: rgba(248, 248, 248, 0.7);
+    color: white;
+}
+#headingNavbar{
+        margin: 5px;
+}
+
+#main {
+    margin: auto;
+    max-height: 50px;
+    text-align: center;
+    /*
+    background-image: url("../assets/images/img2.jpeg");
+    background-size: cover;
+*/
+}
+
+button {
+    margin-top: 25%;
+    background-color: transparent;
+    font-size: 25px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 7px #ddd;
+    width: 20%;
+}
+button:hover{
+    box-shadow: 0px 0px 15px #aaa;
+}
