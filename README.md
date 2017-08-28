@@ -23,8 +23,9 @@ Bubble Blaster is a game where when a user clicks the play button bubbles are ge
 
 
 ## Setup/Installation
-* Click [Bubble Blaster](https://jonnygovish.github.io/Bubble-Blaster-Game) or \n
-Copy https://jonnygovish.github.io/Bubble-Blaster-Game to your browser and load it.
+* Click [Bubble Blaster](https://jonnygovish.github.io/Bubble-Blaster-Game) <br/>
+  or <br/>
+* Copy https://jonnygovish.github.io/Bubble-Blaster-Game to your browser and load it.
 
 ## Known Bugs
 There are no known bugs.
