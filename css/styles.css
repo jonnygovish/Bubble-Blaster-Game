@@ -12,6 +12,7 @@ body{
   position: fixed;
   top: 0;
   opacity: 0.6;
+  z-index: 7;
 }
 
 #linkref{
@@ -21,42 +22,6 @@ body{
   text-align: center;
 }
 
-/*.overlay{
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  background-color: rgba(241, 90, 41, 0.5);
-  overflow: 80%;
-  visibility: hidden;
-  transition: opacity .35s,;
-}
-
-.overlay.open{
-  opacity: 1;
-  visibility: visible;
-  height: 100%;
-}
-
-.overlay-content{
-  position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30%;
-}
-
-overlay .closebtn{
-  position: absolute;
-  top: 20px;
-  right: 45px;
-}
-
-.overlay a:hover{
-
-}*/
 header{
   text-align: center;
 }
@@ -64,6 +29,15 @@ header{
   margin: 0 auto;
 }
 #play {
-  left: 40%;
-  width: 20%
+  position: relative;
+  width: 20%;
+  z-index: 1;
+}
+.player{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.container{
+  padding-top: 20px;
 }
