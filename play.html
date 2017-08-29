@@ -9,7 +9,7 @@
     <title>Bubble Blaster</title>
 </head>
 
-<body class="container-fluid"> 
+<body class="container"> 
     <header>
         <nav class="navbar navbar-default" id="headingNavbar">
                 <div class="navbar-header">
@@ -19,14 +19,17 @@
                     <li><a href="index.html">New Game</a></li>
                     <li><a href="#">Refresh</a></li>
                 </ul>
-      
+      <a class="navbar-brand helloPlayer">Welcome, <span class="playerName">Player</span></a>
         </nav>
+<!--
         <section id="welcome" class="navbar navbar-default">
         <a class="navbar-brand">Welcome, <span class="playerName"></span></a>
         </section>
+-->
     </header>
     <div id="main">
-        <div class="timer"></div>
+        <div class="timer">Timer
+        </div>
         <button class="start"  type="submit">Start</button>
         <button class="pause" type="submit">Pause</button>
         <section class="scores" id="overlay">
