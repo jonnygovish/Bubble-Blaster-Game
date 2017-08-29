@@ -1,43 +1,57 @@
 /*Styles for the body*/
+
 body {
-    background-image: url("../assets/images/img2.jpeg");
+    /*    background-image: url("../assets/images/img2.jpeg");*/
     background-size: cover;
     background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
 }
 
+
 /*Styles for the navigation bar*/
+
 .navbar {
     margin-bottom: 0px;
     min-height: 40px;
 }
-.navbar-default{
-        border-radius: 20px;
+
+.navbar-default {
+    border-radius: 20px;
     background-image: none;
-    box-shadow: none;background-color: rgba(248, 248, 248, 0.7);
+    box-shadow: none;
+    background-color: rgba(248, 248, 248, 0.7);
     color: white;
 }
+
 .navbar-default .navbar-brand {
     color: white;
     font-weight: bolder;
     font-size: 18.5px;
 }
-#headingNavbar{
-        margin: 5px;
+
+#headingNavbar {
+    margin: 5px;
 }
+
 .navbar-nav {
     font-size: 17px;
     font-weight: bold;
     border-left: 2px solid #ddd;
 }
+
 .navbar-default .navbar-nav>li>a {
     color: rgb(80, 145, 165);
     border-right: 2px solid #ddd;
 }
-.helloPlayer{
+
+.helloPlayer {
     float: right;
 }
 
+
 /*Styles for the main tag*/
+
 #main {
     margin: auto;
     max-height: 50px;
@@ -48,8 +62,10 @@ body {
 */
 }
 
+
 /*Styles for the timer*/
-.timer{
+
+.timer {
     float: right;
     color: whitesmoke;
     font-size: 20px;
@@ -58,10 +74,13 @@ body {
     padding: 5px 20px 5px 20px;
 }
 
+
 /*Style start and pause buttons*/
+
 button.pause {
     display: none;
 }
+
 button {
     margin-top: 30%;
     background-color: transparent;
@@ -70,11 +89,14 @@ button {
     box-shadow: 0px 0px 7px #ddd;
     width: 20%;
 }
-button:hover{
+
+button:hover {
     box-shadow: 0px 0px 15px #aaa;
 }
 
+
 /*Styles for the overlay score section*/
+
 #overlay {
     position: fixed;
     /* Sit on top of the page content */
@@ -97,3 +119,52 @@ button:hover{
 }
 
 
+/*Media Queries for phone and tablet mode*/
+
+@media screen and (max-width:600px) {
+    body {
+        background-image: url(../assets/images/img2-rotated.jpeg);
+    }
+    #headingNavbar {
+        margin: 5px;
+        padding-bottom: 10px;
+    }
+    .navbar-default .navbar-brand {
+        font-size: 15px;
+    }
+    .navbar-brand {
+        float: left;
+        height: 0px;
+        padding: 5px 5px;
+        margin-bottom: 5px;
+    }
+    .navbar-nav {
+        font-size: 13px;
+        border-left: 0px;
+        margin: 0px;
+    }
+    .nav>li {
+        display: inline-block;
+    }
+    .navbar-default .navbar-nav>li>a {
+        border-right: 0px;
+    }
+    .navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 0px;
+     line-height: 1.42857143; 
+}
+   
+    .helloPlayer {
+        display: none;
+    }
+}
+
+
+/*Media Queries for laptop mode*/
+
+@media screen and (min-width:601px) {
+    body {
+        background-image: url(../assets/images/img2.jpeg);
+    }
+}
