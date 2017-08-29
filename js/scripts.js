@@ -1,8 +1,17 @@
 // Back-end
 
 // Front-end
-$(document).ready (function() {
-
+$(document).ready(function () {
+  $(".about").on('click', function (event) {
+    event.preventDefault();
+    $('.overlay').addClass('open');
+    console.log("open");
+  });
+  $('.closeNav').on('click', function (event) {
+    event.preventDefault();
+    $('.overlay').removeClass('open');
+  });
+  console.log();
   $('#start').click(function (event) { 
     event.preventDefault();
     
@@ -26,3 +35,4 @@ $(document).ready (function() {
     console.log(countDownTimer());
   });
 });
+
