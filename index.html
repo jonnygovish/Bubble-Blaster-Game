@@ -17,13 +17,14 @@
     <div id="aboutNavBar">
 
       <a href="#" id="linkref" class="navbar-right">
-      <span class="dropdown">Background</span>
-    <div class="dropdown-content">
-      <p>Navy Blue</p>
-      <p>Sky Blue</p>
-      <p>Alice Blue</p>
-      <p>Turquoise</p>
-    </div></a>
+        <select class="bg-colors" name="bg-colors">
+          <option value="">Background</option>
+            <option value="blue">Blue</option>
+              <option value="violet">Violet</option>
+                <option value="aqua">Aqua</option>
+                  <option value="lilac">Lilac</option>
+
+        </select>
 
       <a href="" id="linkref" class="navbar-left">Home</a>
 
@@ -99,14 +100,12 @@
             <label for="player-name">Enter your name:</label>
             <input id="player-name" type="text">
           </div>
-          <button type="input" name="button" id="play">
-        <i class="fa fa-play-circle-o fa-5x" aria-hidden="true"></i></button>
+
+          <i class="fa fa-play-circle-o fa-5x" aria-hidden="true" type="button" id="playbtn"></i>
         </form>
       </div>
       <div>
       </div>
-
-
 
       <script src="js/jquery-3.2.1.js"></script>
       <script src="js/bootstrap.min.js"></script>
