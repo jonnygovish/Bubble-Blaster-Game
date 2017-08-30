@@ -12,21 +12,42 @@
 
 <body class="container"> 
     <header>
-        <nav class="navbar navbar-default" id="headingNavbar">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html">Bubble Blaster</a>
+       <nav class="navbar navbar-default" id="headingNavbar">
+
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="index.html">Bubble Blaster</a>
+                    </div>
+
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#" class="about">About</a></li>
+                         <li><a href="#" class="newGame">New Game</a></li>
+                    </ul>
+
+                    <select class="nav navbar-nav bg-colors" name="bg-colors">
+                        <option value="default">Background</option>
+                        <option value="blue">Blue</option>
+                        <option value="violet">Violet</option>
+                        <option value="aqua">Aqua</option>
+                        <option value="lilac">Lilac</option>
+                    </select>
+
+            </nav>
+             <div id="about" class="overlay">
+                <a href="javascript:void(0)" class="closebtn closeNav">&times;</a>
+
+                <div class="overlay-content">
+
+                    <div id="text">
+                        <h2 id="aboutHeader">What it Bubble Blaster?</h2>
+
+                         <p>Bubble blaster is a fun game where a player pops bubbles. When a player clicks 'Start', bubbles of different colors rise up from the bottom of the page at different speeds.</p> 
+                        <p>Each game is allocated a 30 second span within which you, the player have to pop as many bubbles as you can. When time runs out, the bubbles stop rising and your score is displayed. You can then choose to start a new game. </p>
+                        <p>Enjoy!!!</p>
+                    </div>
+                    
                 </div>
-                <ul class="nav navbar-nav">
-                    <li><a href="index.html">New Game</a></li>
-                    <li><a href="#">Refresh</a></li>
-                </ul>
-      <a class="navbar-brand helloPlayer">Welcome</a>
-        </nav>
-<!--
-        <section id="welcome" class="navbar navbar-default">
-        <a class="navbar-brand">Welcome, <span class="playerName"></span></a>
-        </section>
--->
+            </div>
     </header>
     <div id="main">
         <div class="timer">Timer
