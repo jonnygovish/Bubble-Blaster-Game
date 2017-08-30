@@ -1,8 +1,4 @@
 /*
-.carousel .item img{
-  margin: 0 auto;
-*/
-/*
 }
 #play {
   position: relative;
@@ -178,6 +174,26 @@ body {
     background-color: blue;
     background-color: #b666d2;
     /*opacity: 0.6;*/
+}
+
+/*Style carousel*/
+.carousel {
+    margin: 50px;
+}
+
+.carousel .item img {
+  margin: 0 auto;
+  width: 70vw;
+  height: 60vh;
+}
+
+ol.carousel-indicators {
+    bottom: 5px;
+}
+
+a.left.carousel-control, a.right.carousel-control {
+    color: black;
+    opacity: 1;
 }
 
 /*Styles for the main tag*/
