@@ -10,24 +10,22 @@ body {
     overflow: hidden;
 }
 
+
 /*Styles for the navigation bar*/
 
 .navbar {
     margin-bottom: 0px;
-    min-height: 80px;
+    max-height: 80px;
 }
 
 .navbar-default {
     border-radius: 0;
     background-image: none;
     background-color: rgb(248, 248, 248);
-}
-
-.navbar-default {
     color: white;
     font-weight: bolder;
     font-size: 18.5px;
-    padding: 20px;
+    padding: 5px;
 }
 
 .navbar-brand {
@@ -47,7 +45,9 @@ body {
     border-right: 2px solid #ddd;
 }
 
+
 /*Styles for the overlay about section*/
+
 .overlay {
     height: 100%;
     width: 100%;
@@ -59,7 +59,6 @@ body {
     overflow: hidden;
     visibility: hidden;
     cursor: pointer;
-
 }
 
 .overlay.open {
@@ -67,11 +66,13 @@ body {
     height: 100%;
 }
 
+
 /*position the content inside the overlay*/
 
 .overlay-content {
     position: relative;
-    top: 25%;
+    top: 35%;
+    left: 30%;
     width: 100%;
     text-align: center;
     margin-top: 30px;
@@ -84,36 +85,42 @@ body {
     font-size: 60px;
 }
 
-.overlay-content #text{
-    padding: 8px;
+.overlay-content #text {
+    padding: 20px;
+    width: 60%;
+    margin: auto;
     text-decoration: none;
-    color: black;
-    display: block;
+    /*    color: black;*/
+    /*    display: block;*/
     position: relative;
-    top: 50%;
-    left: 50%;
-
-    font-size: 40px;
+    /*    top: 50%;*/
+    /*    left: 50%;*/
+    font-size: 20px;
     color: white;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
-.overlay-content #aboutHeader{
-    font-size: 60px;
+
+.overlay-content #aboutHeader {
+    font-size: 40px;
 }
+
 
 /*Change background color select*/
-.bg-colors{
-  background-color: white;
-  color: black;
-      float: right;
-    margin-top: 10px;
-    font-size: 16px;   
-     opacity: 0.7;
+
+.bg-colors {
+    background-color: white;
+    color: black;
+    float: right;
+    margin: 15px;
+    font-size: 16px;
+    opacity: 0.7;
 }
 
+
 /*Changeable colors for the body background*/
-.default {    
+
+.default {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
@@ -122,7 +129,7 @@ body {
     /*opacity: 0.6;*/
 }
 
-.blue{
+.blue {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
@@ -131,7 +138,7 @@ body {
     /*opacity: 0.6;*/
 }
 
-.violet{
+.violet {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
@@ -141,7 +148,7 @@ body {
     /*opacity: 0.6;*/
 }
 
-.aqua{
+.aqua {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
@@ -151,7 +158,7 @@ body {
     /*opacity: 0.6;*/
 }
 
-.lilac{
+.lilac {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
@@ -161,25 +168,29 @@ body {
     /*opacity: 0.6;*/
 }
 
+
 /*Style carousel*/
+
 .carousel {
-    margin: 40px;
+    margin: 30px;
 }
 
 .carousel .item img {
-  margin: 0 auto;
-  width: 70vw;
-  height: 60vh;
+    margin: 0 auto;
+    width: 60vw;
+    height: 60vh;
 }
 
 ol.carousel-indicators {
     bottom: 5px;
 }
 
-a.left.carousel-control, a.right.carousel-control {
+a.left.carousel-control,
+a.right.carousel-control {
     color: black;
     opacity: 1;
 }
+
 
 /*Styles for the main tag*/
 
@@ -237,9 +248,13 @@ button:hover {
     background-color: transparent;
     border: 0px;
     box-shadow: 0 0 0;
+    filter: drop-shadow(5px 5px 5px #154360);
+    font-size: 20px;
 }
 
+
 /*Media Queries for the start and pause button*/
+
 
 /*@media screen and (max-width:375px) {
     button {
@@ -285,7 +300,9 @@ button:hover {
 }
 */
 
+
 /*Media Queries for phone and tablet mode*/
+
 
 /*@media screen and (max-width:600px) {
     body {
@@ -327,6 +344,7 @@ button:hover {
 
 /*Media Queries for tablet mode*/
 
+
 /*@media screen and (min-width:760px) {
     .navbar-default .navbar-brand {
         font-size: 18px;
@@ -343,6 +361,7 @@ button:hover {
 
 /*Media Queries for laptop mode*/
 
+
 /*@media screen and (min-width:601px) {
     body {
         background-image: url(../assets/images/img2.jpeg);
@@ -352,13 +371,14 @@ button:hover {
 
 @media (min-width: 768px) {
     .container {
-    width: 100%;
+        width: 100%;
     }
 }
 
+
 /*Style .container*/
+
 .container {
     padding-left: 0;
     padding-right: 0;
 }
-
