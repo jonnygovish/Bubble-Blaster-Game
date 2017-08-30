@@ -1,13 +1,14 @@
 /*Styles for the body*/
 
 body {
-    /*    background-image: url("../assets/images/img2.jpeg");*/
+    background-image: url("../assets/images/background1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
     background-color: lightgrey;
     overflow: hidden;
+    font-family: 'Berkshire Swash', cursive;
 }
 
 
@@ -209,7 +210,7 @@ a.right.carousel-control {
 
 .timer {
     float: right;
-    color: whitesmoke;
+    color: black;
     font-size: 20px;
     border: 2px solid #ddd;
     margin-top: 15px;
