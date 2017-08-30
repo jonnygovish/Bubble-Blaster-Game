@@ -1,94 +1,73 @@
+/*Styles for the body*/
 
-/*
-<<<<<<< HEAD
->>>>>>> 8e9dcd66156bead5425144e3d79ff030f5e123ad
-body{
-  margin: 0px;
-  border: 0px;
-  padding-top: 70px;
+body {
+    /*    background-image: url("../assets/images/img2.jpeg");*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background-color: lightgrey;
+    overflow: hidden;
 }
 
-.bg-colors{
-  background-color: black;
+/*Styles for the navigation bar*/
+
+.navbar {
+    margin-bottom: 0px;
+    min-height: 80px;
 }
 
-.blue{
-  background-color: blue;
-  opacity: 0.6;
+.navbar-default {
+    border-radius: 0;
+    background-image: none;
+    background-color: rgb(248, 248, 248);
 }
 
-.violet{
-  background-color: violet;
-  opacity: 0.6;
+.navbar-default {
+    color: white;
+    font-weight: bolder;
+    font-size: 18.5px;
+    padding: 20px;
 }
 
-.aqua{
-  background-color: aqua;
-  opacity: 0.6;
+.navbar-brand {
+    /*color: white;*/
+    font-weight: bolder;
+    font-size: 30px;
 }
 
-.lilac{
-  background-color: #b666d2;
-  opacity: 0.6;
-}
-#aboutNavBar{
-  width: 100%;
-  height: 70px;
-  background-color: black;
-  color: white;
-  position: fixed;
-  top: 0;
-  opacity: 0.6;
-  z-index: 7;
-  font-size: 20px;
+.navbar-nav {
+    font-size: 20px;
+    font-weight: bold;
+    border-left: 2px solid #ddd;
 }
 
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-*/
-
-/*
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
+.navbar-default .navbar-nav>li>a {
+    color: rgb(80, 145, 165);
+    border-right: 2px solid #ddd;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
+/*Styles for the overlay about section*/
 .overlay {
     height: 100%;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
-    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.8);
     overflow: hidden;
-    opacity: 0.5;
     visibility: hidden;
-    transition: opacity .35s, visibility .35s;
-*/
+    cursor: pointer;
 
-/*
 }
 
 .overlay.open {
-    opacity: 1;
     visibility: visible;
     height: 100%;
 }
 
-
-position the content inside the overlay
+/*position the content inside the overlay*/
 
 .overlay-content {
     position: relative;
@@ -97,14 +76,14 @@ position the content inside the overlay
     text-align: center;
     margin-top: 30px;
 }
+
 .overlay .closebtn {
     position: absolute;
     top: 20px;
     right: 45px;
     font-size: 60px;
 }
-*/
-/*
+
 .overlay-content #text{
     padding: 8px;
     text-decoration: none;
@@ -119,88 +98,88 @@ position the content inside the overlay
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
 }
-
-
-#linkref{
-  color: white;
-  text-decoration: none;
-  padding: 15px;
-  text-align: center;
+.overlay-content #aboutHeader{
+    font-size: 60px;
 }
 
-header{
-  text-align: center;
+/*Change background color select*/
+.bg-colors{
+  background-color: white;
+  color: black;
+      float: right;
+    margin-top: 10px;
+    font-size: 16px;   
+     opacity: 0.7;
 }
-.carousel .item img{
-  margin: 0 auto;
-*/
-/*
-}
-#play {
-  position: relative;
-  width: 20%;
-  z-index: 1;
-}
-.player{
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-.container{
-  padding-top: 20px;
-*/
-/*=======*/
-/*Styles for the body*/
 
-body {
-    /*    background-image: url("../assets/images/img2.jpeg");*/
+/*Changeable colors for the body background*/
+.default {    
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
+    background-color: lightgrey;
+    /*opacity: 0.6;*/
 }
 
-
-/*Styles for the navigation bar*/
-
-.navbar {
-    margin-bottom: 0px;
-    min-height: 40px;
+.blue{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background-color: blue;
+    /*opacity: 0.6;*/
 }
 
-.navbar-default {
-    border-radius: 10px;
-    background-image: none;
-    background-color: rgba(248, 248, 248, 0.7);
-    color: white;
-    box-shadow: 0px 0px 10px #ddd;
+.violet{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background-color: blue;
+    background-color: violet;
+    /*opacity: 0.6;*/
 }
 
-.navbar-default .navbar-brand {
-    color: white;
-    font-weight: bolder;
-    font-size: 18.5px;
+.aqua{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background-color: blue;
+    background-color: aqua;
+    /*opacity: 0.6;*/
 }
 
-#headingNavbar {
-    margin: 5px;
+.lilac{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background-color: blue;
+    background-color: #b666d2;
+    /*opacity: 0.6;*/
 }
 
-.navbar-nav {
-    font-size: 17px;
-    font-weight: bold;
-    border-left: 2px solid #ddd;
+/*Style carousel*/
+.carousel {
+    margin: 40px;
 }
 
-.navbar-default .navbar-nav>li>a {
-    color: rgb(80, 145, 165);
-    border-right: 2px solid #ddd;
+.carousel .item img {
+  margin: 0 auto;
+  width: 70vw;
+  height: 60vh;
 }
 
-.helloPlayer {
-    float: right;
+ol.carousel-indicators {
+    bottom: 5px;
 }
 
+a.left.carousel-control, a.right.carousel-control {
+    color: black;
+    opacity: 1;
+}
 
 /*Styles for the main tag*/
 
@@ -253,34 +232,16 @@ button:hover {
     box-shadow: 0px 0px 15px #aaa;
 }
 
-
-/*Styles for the overlay score section*/
-
-#overlay {
-    position: fixed;
-    /* Sit on top of the page content */
-    display: none;
-    /* Hidden by default */
-    width: 100%;
-    /* Full width (cover the whole page) */
-    height: 100%;
-    /* Full height (cover the whole page) */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    /* Black background with opacity */
-    z-index: 2;
-    /* Specify a stack order in case you're using a different order for other elements */
-    cursor: pointer;
-    /* Add a pointer on hover */
+.playButton {
+    margin-left: 40%;
+    background-color: transparent;
+    border: 0px;
+    box-shadow: 0 0 0;
 }
-
 
 /*Media Queries for the start and pause button*/
 
-@media screen and (max-width:375px) {
+/*@media screen and (max-width:375px) {
     button {
         width: 30%;
     }
@@ -322,11 +283,11 @@ button:hover {
         position: absolute;
     }
 }
-
+*/
 
 /*Media Queries for phone and tablet mode*/
 
-@media screen and (max-width:600px) {
+/*@media screen and (max-width:600px) {
     body {
         background-image: url(../assets/images/img2-rotated.jpeg);
     }
@@ -335,7 +296,6 @@ button:hover {
 @media screen and (max-width:768px) {
     #headingNavbar {
         margin: 5px;
-        padding-bottom: 10px;
     }
     .navbar-default .navbar-brand {
         font-size: 15px;
@@ -343,7 +303,6 @@ button:hover {
     .navbar-brand {
         float: left;
         height: 0px;
-        padding: 5px 5px;
         margin-bottom: 5px;
     }
     .navbar-nav {
@@ -358,23 +317,19 @@ button:hover {
         border-right: 0px;
     }
     .navbar-nav>li>a {
-        padding-top: 10px;
-        padding-bottom: 0px;
         line-height: 1.42857143;
     }
     .helloPlayer {
         display: none;
     }
-}
+}*/
 
 
 /*Media Queries for tablet mode*/
 
-@media screen and (min-width:760px) {
+/*@media screen and (min-width:760px) {
     .navbar-default .navbar-brand {
         font-size: 18px;
-        padding-left: 15px;
-        padding-top: 0px;
     }
     .navbar-nav {
         font-size: 15px;
@@ -383,14 +338,27 @@ button:hover {
         display: inline;
         float: right;
     }
-}
+}*/
 
 
 /*Media Queries for laptop mode*/
 
-@media screen and (min-width:601px) {
+/*@media screen and (min-width:601px) {
     body {
         background-image: url(../assets/images/img2.jpeg);
     }
 
+}*/
+
+@media (min-width: 768px) {
+    .container {
+    width: 100%;
+    }
 }
+
+/*Style .container*/
+.container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
