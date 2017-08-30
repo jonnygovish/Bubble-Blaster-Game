@@ -94,6 +94,9 @@ $(document).ready(function () {
   $('#start').click(function (event) { 
     event.preventDefault();
     
+    // Hide header and start button
+    $('#start').hide();
+    $('header').hide();
     var min = 0;
     var sec = 30;
 
@@ -103,10 +106,13 @@ $(document).ready(function () {
       var displayCountdown = $('.timer').text( min +" : " + sec );
       sec--;
       if(sec === -1) {
-         clearInterval(myVar);
+        clearInterval(myVar);
+
+        // Show header and start button
+        $('#start').show();
+        $('header').show();
       };
     };
-    debugger;
 
     $("#bubbles").on("click", ".large", function() {
       var bubble = $(this);
@@ -120,14 +126,14 @@ $(document).ready(function () {
     });
 
     $("#bubbles").on("click", ".small", function() {
-      var bubble = $(this);
-      $(this).css("transform", "scale(1.1)");
-      setTimeout(function() {
-      $(bubble).css("background", "url(../assets/images/small-bubble.png)")
-      setTimeout(function() {
-        $(bubble).css("opacity", "0");
-      }, 50);
-      }, 20);
+        var bubble = $(this);
+        $(this).css("transform", "scale(1.1)");
+        setTimeout(function() {
+        $(bubble).css("background", "url(../assets/images/small-bubble.png)")
+        setTimeout(function() {
+          $(bubble).css("opacity", "0");
+        }, 50);
+        }, 20);
       });
     });
 });
