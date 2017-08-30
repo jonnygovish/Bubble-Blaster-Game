@@ -26,31 +26,8 @@ body {
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
-    background-color: lightblue;
+    background-color: lightgrey;
 }
-
- /*Change background color select*/
-
-/*Changeable colors for the body background*/
-/*.blue{
-    background-color: blue;
-    opacity: 0.6;
-}
-
-.violet{
-    background-color: violet;
-    opacity: 0.6;
-}
-
-.aqua{
-    background-color: aqua;
-    opacity: 0.6;
-}
-
-.lilac{
-    background-color: #b666d2;
-    opacity: 0.6;
-}*/
 
 /*Styles for the navigation bar*/
 
@@ -62,7 +39,7 @@ body {
 .navbar-default {
     border-radius: 0;
     background-image: none;
-    background-color: rgba(248, 248, 248, 0.7);
+    background-color: rgb(248, 248, 248);
 }
 
 .navbar-default {
@@ -87,13 +64,6 @@ body {
 .navbar-default .navbar-nav>li>a {
     color: rgb(80, 145, 165);
     border-right: 2px solid #ddd;
-}
-
-.bg-colors{
-  background-color: white;
-  color: black;
-      float: right;
-    margin-top: 10px;
 }
 
 /*Styles for the overlay about section*/
@@ -133,7 +103,6 @@ body {
     font-size: 60px;
 }
 
-
 .overlay-content #text{
     padding: 8px;
     text-decoration: none;
@@ -152,6 +121,64 @@ body {
     font-size: 60px;
 }
 
+/*Change background color select*/
+.bg-colors{
+  background-color: white;
+  color: black;
+      float: right;
+    margin-top: 10px;
+    font-size: 16px;   
+     opacity: 0.7;
+}
+
+/*Changeable colors for the body background*/
+.default {    
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background-color: lightgrey;
+    /*opacity: 0.6;*/
+}
+
+.blue{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background-color: blue;
+    /*opacity: 0.6;*/
+}
+
+.violet{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background-color: blue;
+    background-color: violet;
+    /*opacity: 0.6;*/
+}
+
+.aqua{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background-color: blue;
+    background-color: aqua;
+    /*opacity: 0.6;*/
+}
+
+.lilac{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background-color: blue;
+    background-color: #b666d2;
+    /*opacity: 0.6;*/
+}
 
 /*Styles for the main tag*/
 
