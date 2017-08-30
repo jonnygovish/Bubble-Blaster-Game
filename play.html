@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <title>Bubble Blaster</title>
+</head>
+
+<body class="container"> 
+    <header>
+        <nav class="navbar navbar-default" id="headingNavbar">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">Bubble Blaster</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">New Game</a></li>
+                    <li><a href="#">Refresh</a></li>
+                </ul>
+      <a class="navbar-brand helloPlayer">Welcome</a>
+        </nav>
+<!--
+        <section id="welcome" class="navbar navbar-default">
+        <a class="navbar-brand">Welcome, <span class="playerName"></span></a>
+        </section>
+-->
+    </header>
+    <div id="main">
+        <div class="timer">Timer
+        </div>
+        <button id="start" type="click">Start</button>
+        <button class="pause" type="click">Pause</button>
+        <section class="scores" id="overlay">
+            <div>
+                <img src="assets/images/game-over.jpg" alt="Game Over Image">
+            </div>
+            <div class="currentScore">
+                
+            </div>
+            <div class="previousScores">
+                
+            </div>
+        </section>
+    </div>
+<!--    Javascript Links-->
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
