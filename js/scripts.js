@@ -2,12 +2,12 @@
 
 // Front-end
 $(document).ready(function () {
-    // Make about section clickable and open about overlay
+  // Make about section clickable and open about overlay
   $(".about").on('click', function (event) {
     event.preventDefault();
     $('.overlay').addClass('open');
-      // Test
-      // console.log("open");
+    // Test
+    // console.log("open");
   });
     
     // Close the about overlay
@@ -16,13 +16,12 @@ $(document).ready(function () {
     $('.overlay').removeClass('open');
   });
     
-    // Store and Display player name in the console 
-    $('form.player').submit( function (event) {
-        event.preventDefault();
-        // Navigate to play console
-        window.location.assign("play.html");
-        
-    });
+  // Navigate to play console
+  $('form.player').submit( function (event) {
+    event.preventDefault();
+    window.location.assign("play.html");
+      
+  });
   
     // Click the start button for the timer to start
   $('#start').click(function (event) { 
