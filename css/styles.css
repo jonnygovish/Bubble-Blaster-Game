@@ -6,9 +6,16 @@ body {
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
-    background-color: lightgrey;
     overflow: hidden;
     font-family: 'Berkshire Swash', cursive;
+}
+
+.colorOverlay {
+    background-color: rgba(93, 70, 196,0.5);
+     background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
 }
 
 
@@ -126,8 +133,7 @@ body {
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
-    background-color: lightgrey;
-    /*opacity: 0.6;*/
+    background-color: rgba(93, 70, 196,0.5);
 }
 
 .blue {
@@ -135,8 +141,7 @@ body {
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
-    background-color: blue;
-    /*opacity: 0.6;*/
+    background-color: rgba(69, 96, 204, 0.6);
 }
 
 .violet {
@@ -144,9 +149,7 @@ body {
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
-    background-color: blue;
-    background-color: violet;
-    /*opacity: 0.6;*/
+    background-color: rgba(9, 31, 146, 0.6);
 }
 
 .aqua {
@@ -154,9 +157,7 @@ body {
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
-    background-color: blue;
-    background-color: aqua;
-    /*opacity: 0.6;*/
+    background-color: rgba(89, 96, 168,0.6);
 }
 
 .lilac {
@@ -164,9 +165,7 @@ body {
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
-    background-color: blue;
-    background-color: #b666d2;
-    /*opacity: 0.6;*/
+    background-color: rgba(36, 42, 86,0.6);
 }
 
 
