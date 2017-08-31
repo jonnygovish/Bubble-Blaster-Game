@@ -23,7 +23,9 @@ function createBubbles() {
   // Number of bubbles produces at one go
   var frequency = Math.floor(Math.random() * (6 - 1 + 1)) + 10;
   // For appending the rate of speed and veritical speed
-  var randomAnimation = "moveclouds " + verticalSpeed + "s linear infinite, sideWays " + frequency + "s  ease-in-out infinite alternate";
+  var randomAnimation = "moveclouds " + verticalSpeed +
+                        "s linear infinite, sideWays " +
+                        frequency + "s  ease-in-out infinite alternate";
 
   $("#bubbles").append('<div class="bubble ' + bubbleSize + '" style="left:' +
     randomLeft + '%;opacity:0.' + randomOpacity + ';transform:' + randomScale +
@@ -33,7 +35,7 @@ function createBubbles() {
 }
 
 // Create 50 bubbles every 0.5 seconds
-for (i = 0; i < 50; i++) {
+for (i = 0; i < 250; i++) {
   (function(i) {
     window.setTimeout(function() {
       createBubbles();
@@ -83,32 +85,50 @@ $(document).ready(function () {
             $('.colorOverlay').addClass('default');
         }
   });
-  // Click the start button for the timer to start
+
+// Click the start button for the timer to start
   $('#start').click(function (event) {
     event.preventDefault();
+
+    // Show bubbles
+    $('#bubbles').show();
 
     // Hide header and start button
     $('#start').hide();
     $('header').hide();
+    var score = 0;
     var min = 0;
     var sec = 30;
+
+    var displayScoreCounter = $('.scoreDisplay').text( score );
+    var displayCountdown = $('.timer').text( min +" : " + sec );
 
     var myVar = setInterval( function() { countDownTimer() } ,1000 );
 
     function countDownTimer() {
       var displayCountdown = $('.timer').text( min +" : " + sec );
       sec--;
-      if(sec === -1) {
+      if(sec <= -1) {
         clearInterval(myVar);
 
-        // Show header and start button
+        // Show header, start button and modal with the score attained
         $('#start').show();
         $('header').show();
+        $('.yourScore').text(score);
+        $('#myModal').modal();
+        // Hide score displayed during the game, timer, start button and bubbles
+        $('.scoreDisplay').hide();
+        $('.timer').hide();
+        $('#start').hide();
+        $('#bubbles').hide();
       };
     };
 
     $("#bubbles").on("click", ".large", function() {
       var bubble = $(this);
+        // Increase score after clicking a bubble
+        score++;
+
       $(this).css("transform", "scale(1.1)");
       setTimeout(function() {
         $(bubble).css("background", "url(../assets/images/large-bubble.png)")
@@ -116,10 +136,18 @@ $(document).ready(function () {
           $(bubble).css("opacity", "0");
         }, 50);
       }, 20);
+
+      // Display score
+      var scoreCounter = $('.scoreDisplay').text( score );
     });
+
 
     $("#bubbles").on("click", ".small", function() {
         var bubble = $(this);
+
+        // Increase score after clicking a bubble
+        score++;
+
         $(this).css("transform", "scale(1.1)");
         setTimeout(function() {
         $(bubble).css("background", "url(../assets/images/small-bubble.png)")
@@ -127,6 +155,9 @@ $(document).ready(function () {
           $(bubble).css("opacity", "0");
         }, 50);
         }, 20);
+
+      // Display score
+      var scoreCounter = $('.scoreDisplay').text( score );
       });
     });
 });
