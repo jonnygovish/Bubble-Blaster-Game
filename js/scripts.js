@@ -90,8 +90,11 @@ $(document).ready(function () {
     // Hide header and start button
     $('#start').hide();
     $('header').hide();
+    var score = 0;
     var min = 0;
     var sec = 30;
+    var displayScoreCounter = $('.scoreDisplay').text( score );
+    var displayCountdown = $('.timer').text( min +" : " + sec );
 
     var myVar = setInterval( function() { countDownTimer() } ,1000 );
 
@@ -110,6 +113,7 @@ $(document).ready(function () {
     $("#bubbles").on("click", ".large", function() {
       var bubble = $(this);
       $(this).css("transform", "scale(1.1)");
+      console.log(typeof $(this).css("transform", "scale(1.1)"));
       setTimeout(function() {
         $(bubble).css("background", "url(../assets/images/large-bubble.png)")
         setTimeout(function() {
