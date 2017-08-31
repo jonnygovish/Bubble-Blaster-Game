@@ -383,3 +383,89 @@ button:hover {
     padding-left: 0;
     padding-right: 0;
 }
+
+
+/*Bubble animation*/
+#bubbles {
+  height: 100%;
+  width: 100%;
+}
+
+#bubbles {
+  padding: 100px 0;
+  position: relative;
+}
+
+.bubble {
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  transition: scale .05s linear;
+}
+
+.large {
+  background: url(../assets/images/large-bubble.png);
+  width: 148px;
+  height: 150px;
+}
+
+.small {
+  background: url(../assets/images/large-bubble.png);
+  width: 92px;
+  height: 91px;
+}
+
+@-webkit-keyframes moveclouds {
+  0% {
+    top: 500px;
+  }
+  100% {
+    top: -500px;
+  }
+}
+
+@-webkit-keyframes sideWays {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 50px;
+  }
+}
+
+@-moz-keyframes moveclouds {
+  0% {
+    top: 500px;
+  }
+  100% {
+    top: -500px;
+  }
+}
+
+@-moz-keyframes sideWays {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 50px;
+  }
+}
+
+@-o-keyframes moveclouds {
+  0% {
+    top: 500px;
+  }
+  100% {
+    top: -500px;
+  }
+}
+
+@-o-keyframes sideWays {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 50px;
+  }
+}
+
