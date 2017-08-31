@@ -1,0 +1,514 @@
+/*Styles for the body*/
+
+body {
+    background-image: url("../assets/images/background-compressed.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Berkshire Swash', cursive;
+}
+
+.colorOverlay {
+    background-color: rgba(93, 70, 196, 0.5);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/*Styles for the navigation bar*/
+
+.navbar {
+    margin-bottom: 0px;
+    max-height: 80px;
+  
+}
+
+.navbar-default {
+    border-radius: 0;
+    background-image: none;
+    background-color: rgb(248, 248, 248);
+    color: white;
+    font-weight: bolder;
+    font-size: 18.5px;
+    padding: 5px;
+}
+.navbar-header img{
+    float: left;
+}
+
+.navbar-brand {
+    /*color: white;*/
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.navbar-nav {
+    font-size: 20px;
+    font-weight: bold;
+    border-left: 2px solid #ddd;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: rgb(80, 145, 165);
+    border-right: 2px solid #ddd;
+}
+
+
+/*Styles for the overlay about section*/
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+  
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.overlay.open {
+    visibility: visible;
+    height: 100%;
+}
+
+
+/*position the content inside the overlay*/
+
+.overlay-content {
+    position: relative;
+    top: 35%;
+    left: 30%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.overlay-content #text {
+    padding: 20px;
+    width: 60%;
+    margin: auto;
+    text-decoration: none;
+    /*    color: black;*/
+    /*    display: block;*/
+    position: relative;
+    /*    top: 50%;*/
+    /*    left: 50%;*/
+    font-size: 20px;
+    color: white;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.overlay-content #aboutHeader {
+    font-size: 40px;
+}
+
+
+/*Change background color select*/
+
+.bg-colors {
+    background-color: white;
+    color: black;
+    float: right;
+    margin: 15px;
+    font-size: 16px;
+    opacity: 0.7;
+   cursor: pointer;
+}
+
+
+/*Changeable colors for the body background*/
+
+.default {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(93, 70, 196, 0.5);
+}
+
+.blue {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(69, 96, 204, 0.6);
+}
+
+.violet {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(9, 31, 146, 0.6);
+}
+
+.aqua {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(89, 96, 168, 0.6);
+}
+
+.lilac {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(36, 42, 86, 0.6);
+}
+
+/*Styles for the Slogan*/
+.actionCall{
+    text-align: center;
+    font-size: 30px;
+font-weight: bolder;
+    padding-top: 10px;
+}
+
+/*Style carousel*/
+
+.carousel {
+    margin: 20px;
+}
+
+.carousel .item img {
+    margin: 0 auto;
+    width: 60vw;
+    height: 60vh;
+    border: 2.5px solid #fff;
+}
+
+ol.carousel-indicators {
+    bottom: 5px;
+}
+
+a.left.carousel-control,
+a.right.carousel-control {
+    color: black;
+    opacity: 1;
+}
+
+
+/*Styles for the main tag*/
+
+#main {
+    margin: auto;
+    max-height: 50px;
+    text-align: center;
+    /*
+    background-image: url("../assets/images/img2.jpeg");
+    background-size: cover;
+*/
+}
+
+
+/*Styles for the timer*/
+
+.scoreDisplay,
+.timer {
+    color: black;
+    font-size: 20px;
+    border: 2px solid #ddd;
+    margin-top: 15px;
+    padding: 5px 20px 5px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px #ddd;
+}
+
+.scoreDisplay {
+    float: left;
+    margin-left: 25px;
+}
+
+.timer {
+    float: right;
+    margin-right: 25px;
+}
+
+
+/*Style start and pause buttons*/
+
+button.pause {
+    display: none;
+}
+
+button {
+    background-color: transparent;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 7px #ddd;
+    width: 20%;
+}
+
+#start {
+    top: 65%;
+    left: 40%;
+    position: absolute;
+}
+
+button:hover {
+    box-shadow: 0px 0px 5px #ddd;
+}
+
+.playButton {
+    margin-left: 40%;
+    background-color: transparent;
+    border: 0px;
+    box-shadow: 0 0 0;
+    filter: drop-shadow(2px 2px 5px #ddd);
+    font-size: 18px;
+}
+#playbtn:hover{
+    filter: drop-shadow(5px 5px 5px white);
+}
+
+
+/*Media Queries for the start and pause button*/
+
+
+/*@media screen and (max-width:375px) {
+    button {
+        width: 30%;
+    }
+    #start {
+        top: 45%;
+        left: 40%;
+        position: absolute;
+    }
+}
+
+@media screen and (min-width:376px and max-width:480px) {
+    button {
+        width: 30%;
+    }
+    #start {
+        top: 60%;
+        left: 35%;
+        position: absolute;
+    }
+}
+
+@media screen and (min-width:481px and max-width:720px) {
+    button {
+        width: 30%;
+    }
+    #start {
+        top: 45%;
+        left: 40%;
+        position: absolute;
+    }
+}
+@media screen and (min-width:721px and max-width:1000px) {
+    button {
+        width: 20%;
+    }
+    #start {
+        top: 50%;
+        left: 40%;
+        position: absolute;
+    }
+}
+*/
+
+
+/*Media Queries for phone and tablet mode*/
+
+
+/*@media screen and (max-width:600px) {
+    body {
+        background-image: url(../assets/images/img2-rotated.jpeg);
+    }
+}
+
+@media screen and (max-width:768px) {
+    #headingNavbar {
+        margin: 5px;
+    }
+    .navbar-default .navbar-brand {
+        font-size: 15px;
+    }
+    .navbar-brand {
+        float: left;
+        height: 0px;
+        margin-bottom: 5px;
+    }
+    .navbar-nav {
+        font-size: 13px;
+        border-left: 0px;
+        margin: 0px;
+    }
+    .nav>li {
+        display: inline-block;
+    }
+    .navbar-default .navbar-nav>li>a {
+        border-right: 0px;
+    }
+    .navbar-nav>li>a {
+        line-height: 1.42857143;
+    }
+    .helloPlayer {
+        display: none;
+    }
+}*/
+
+
+/*Media Queries for tablet mode*/
+
+
+/*@media screen and (min-width:760px) {
+    .navbar-default .navbar-brand {
+        font-size: 18px;
+    }
+    .navbar-nav {
+        font-size: 15px;
+    }
+    .helloPlayer {
+        display: inline;
+        float: right;
+    }
+}*/
+
+
+/*Media Queries for laptop mode*/
+
+
+/*@media screen and (min-width:601px) {
+    body {
+        background-image: url(../assets/images/img2.jpeg);
+    }
+
+}*/
+
+@media (min-width: 768px) {
+    .container {
+        width: 100%;
+    }
+}
+
+
+/*Style .container*/
+
+.container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+/*Bubble animation*/
+
+#bubbles {
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+
+#bubbles {
+    padding: 100px 0;
+    position: relative;
+}
+
+.bubble {
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    transition: scale .05s linear;
+}
+
+.large {
+    background: url(../assets/images/large-bubble.png);
+    width: 148px;
+    height: 150px;
+    cursor: url(../assets/images/target-with-circle.png),pointer;
+}
+.small {
+    background: url(../assets/images/large-bubble.png);
+    width: 92px;
+    height: 91px;
+    cursor: url(../assets/images/target-with-circle.png), pointer;
+}
+
+@-webkit-keyframes moveclouds {
+    0% {
+        top: 500px;
+    }
+    100% {
+        top: -500px;
+    }
+}
+
+@-webkit-keyframes sideWays {
+    0% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: 50px;
+    }
+}
+
+@-moz-keyframes moveclouds {
+    0% {
+        top: 500px;
+    }
+    100% {
+        top: -500px;
+    }
+}
+
+@-moz-keyframes sideWays {
+    0% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: 50px;
+    }
+}
+
+@-o-keyframes moveclouds {
+    0% {
+        top: 500px;
+    }
+    100% {
+        top: -500px;
+    }
+}
+
+@-o-keyframes sideWays {
+    0% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: 50px;
+    }
+}
+
+/*Style modal*/
+
+.modal-title {
+    font-size: 60px;
+}
+
+.modal-body {
+    font-size: 60px;
+}
+
+.btn-default {
+    background-image: none;
+    font-size: 15px;
+}
+
