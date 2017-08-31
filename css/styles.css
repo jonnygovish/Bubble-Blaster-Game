@@ -1,7 +1,7 @@
 /*Styles for the body*/
 
 body {
-    background-image: url("../assets/images/background1.jpg");
+    background-image: url("../assets/images/background-compressed.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
@@ -11,8 +11,8 @@ body {
 }
 
 .colorOverlay {
-    background-color: rgba(93, 70, 196,0.5);
-     background-size: cover;
+    background-color: rgba(93, 70, 196, 0.5);
+    background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
@@ -24,6 +24,7 @@ body {
 .navbar {
     margin-bottom: 0px;
     max-height: 80px;
+  
 }
 
 .navbar-default {
@@ -34,6 +35,9 @@ body {
     font-weight: bolder;
     font-size: 18.5px;
     padding: 5px;
+}
+.navbar-header img{
+    float: left;
 }
 
 .navbar-brand {
@@ -62,7 +66,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 3;
+  
     background-color: rgba(0, 0, 0, 0.8);
     overflow: hidden;
     visibility: hidden;
@@ -123,6 +127,7 @@ body {
     margin: 15px;
     font-size: 16px;
     opacity: 0.7;
+   cursor: pointer;
 }
 
 
@@ -133,7 +138,7 @@ body {
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(93, 70, 196,0.5);
+    background-color: rgba(93, 70, 196, 0.5);
 }
 
 .blue {
@@ -157,7 +162,7 @@ body {
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(89, 96, 168,0.6);
+    background-color: rgba(89, 96, 168, 0.6);
 }
 
 .lilac {
@@ -165,20 +170,28 @@ body {
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(36, 42, 86,0.6);
+    background-color: rgba(36, 42, 86, 0.6);
 }
 
+/*Styles for the Slogan*/
+.actionCall{
+    text-align: center;
+    font-size: 30px;
+font-weight: bolder;
+    padding-top: 10px;
+}
 
 /*Style carousel*/
 
 .carousel {
-    margin: 30px;
+    margin: 20px;
 }
 
 .carousel .item img {
     margin: 0 auto;
     width: 60vw;
     height: 60vh;
+    border: 2.5px solid #fff;
 }
 
 ol.carousel-indicators {
@@ -207,7 +220,8 @@ a.right.carousel-control {
 
 /*Styles for the timer*/
 
- .scoreDisplay , .timer{
+.scoreDisplay,
+.timer {
     color: black;
     font-size: 20px;
     border: 2px solid #ddd;
@@ -216,15 +230,16 @@ a.right.carousel-control {
     border-radius: 10px;
     box-shadow: 0px 0px 3px #ddd;
 }
-.scoreDisplay{
+
+.scoreDisplay {
     float: left;
     margin-left: 25px;
 }
-.timer{
+
+.timer {
     float: right;
     margin-right: 25px;
 }
-
 
 
 /*Style start and pause buttons*/
@@ -235,7 +250,7 @@ button.pause {
 
 button {
     background-color: transparent;
-    font-size: 25px;
+    font-size: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 7px #ddd;
     width: 20%;
@@ -248,7 +263,7 @@ button {
 }
 
 button:hover {
-    box-shadow: 0px 0px 15px #aaa;
+    box-shadow: 0px 0px 5px #ddd;
 }
 
 .playButton {
@@ -256,8 +271,11 @@ button:hover {
     background-color: transparent;
     border: 0px;
     box-shadow: 0 0 0;
-    filter: drop-shadow(5px 5px 5px #154360);
-    font-size: 20px;
+    filter: drop-shadow(2px 2px 5px #ddd);
+    font-size: 18px;
+}
+#playbtn:hover{
+    filter: drop-shadow(5px 5px 5px white);
 }
 
 
@@ -393,6 +411,7 @@ button:hover {
 
 
 /*Bubble animation*/
+
 #bubbles {
   height: 100%;
   width: 100%;
@@ -400,84 +419,86 @@ button:hover {
 }
 
 #bubbles {
-  padding: 100px 0;
-  position: relative;
+    padding: 100px 0;
+    position: relative;
 }
 
 .bubble {
-  background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
-  transition: scale .05s linear;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    transition: scale .05s linear;
 }
 
 .large {
-  background: url(../assets/images/large-bubble.png);
-  width: 148px;
-  height: 150px;
+    background: url(../assets/images/large-bubble.png);
+    width: 148px;
+    height: 150px;
+    cursor: url(../assets/images/target-with-circle.png),pointer;
 }
-
 .small {
-  background: url(../assets/images/large-bubble.png);
-  width: 92px;
-  height: 91px;
+    background: url(../assets/images/large-bubble.png);
+    width: 92px;
+    height: 91px;
+    cursor: url(../assets/images/target-with-circle.png), pointer;
 }
 
 @-webkit-keyframes moveclouds {
-  0% {
-    top: 500px;
-  }
-  100% {
-    top: -500px;
-  }
+    0% {
+        top: 500px;
+    }
+    100% {
+        top: -500px;
+    }
 }
 
 @-webkit-keyframes sideWays {
-  0% {
-    margin-left: 0px;
-  }
-  100% {
-    margin-left: 50px;
-  }
+    0% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: 50px;
+    }
 }
 
 @-moz-keyframes moveclouds {
-  0% {
-    top: 500px;
-  }
-  100% {
-    top: -500px;
-  }
+    0% {
+        top: 500px;
+    }
+    100% {
+        top: -500px;
+    }
 }
 
 @-moz-keyframes sideWays {
-  0% {
-    margin-left: 0px;
-  }
-  100% {
-    margin-left: 50px;
-  }
+    0% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: 50px;
+    }
 }
 
 @-o-keyframes moveclouds {
-  0% {
-    top: 500px;
-  }
-  100% {
-    top: -500px;
-  }
+    0% {
+        top: 500px;
+    }
+    100% {
+        top: -500px;
+    }
 }
 
 @-o-keyframes sideWays {
-  0% {
-    margin-left: 0px;
-  }
-  100% {
-    margin-left: 50px;
-  }
+    0% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: 50px;
+    }
 }
 
 /*Style modal*/
+
 .modal-title {
     font-size: 60px;
 }
