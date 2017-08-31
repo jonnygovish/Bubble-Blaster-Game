@@ -476,3 +476,18 @@ button:hover {
     margin-left: 50px;
   }
 }
+
+/*Style modal*/
+.modal-title {
+    font-size: 60px;
+}
+
+.modal-body {
+    font-size: 60px;
+}
+
+.btn-default {
+    background-image: none;
+    font-size: 15px;
+}
+
