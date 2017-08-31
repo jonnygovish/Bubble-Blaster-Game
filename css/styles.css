@@ -35,6 +35,9 @@ body {
     font-size: 18.5px;
     padding: 5px;
 }
+.navbar-header img{
+    float: left;
+}
 
 .navbar-brand {
     /*color: white;*/
@@ -169,17 +172,25 @@ body {
     background-color: rgba(36, 42, 86, 0.6);
 }
 
+/*Styles for the Slogan*/
+.actionCall{
+    text-align: center;
+    font-size: 30px;
+font-weight: bolder;
+    padding-top: 10px;
+}
 
 /*Style carousel*/
 
 .carousel {
-    margin: 30px;
+    margin: 20px;
 }
 
 .carousel .item img {
     margin: 0 auto;
     width: 60vw;
     height: 60vh;
+    border: 2.5px solid #fff;
 }
 
 ol.carousel-indicators {
@@ -230,6 +241,7 @@ a.right.carousel-control {
 }
 
 
+
 /*Style start and pause buttons*/
 
 button.pause {
@@ -238,7 +250,7 @@ button.pause {
 
 button {
     background-color: transparent;
-    font-size: 25px;
+    font-size: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 7px #ddd;
     width: 20%;
@@ -251,7 +263,7 @@ button {
 }
 
 button:hover {
-    box-shadow: 0px 0px 15px #aaa;
+    box-shadow: 0px 0px 5px #ddd;
 }
 
 .playButton {
@@ -259,8 +271,11 @@ button:hover {
     background-color: transparent;
     border: 0px;
     box-shadow: 0 0 0;
-    filter: drop-shadow(5px 5px 5px #154360);
-    font-size: 20px;
+    filter: drop-shadow(2px 2px 5px #ddd);
+    font-size: 18px;
+}
+#playbtn:hover{
+    filter: drop-shadow(5px 5px 5px white);
 }
 
 
