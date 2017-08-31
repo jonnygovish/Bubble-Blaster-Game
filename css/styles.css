@@ -24,6 +24,7 @@ body {
 .navbar {
     margin-bottom: 0px;
     max-height: 80px;
+    z-index: 5;
 }
 
 .navbar-default {
@@ -240,7 +241,12 @@ a.right.carousel-control {
     margin-right: 25px;
 }
 
-
+/*Call to Action Paragraph*/
+.taunt{
+    top: 30%;
+    left: 30%;
+    font-size: 18px;
+}
 
 /*Style start and pause buttons*/
 
