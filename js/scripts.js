@@ -9,25 +9,25 @@ $(document).ready(function () {
       // Test
       // console.log("open");
   });
-    
+
     // Close the about overlay
   $('.closeNav').on('click', function (event) {
     event.preventDefault();
     $('.overlay').removeClass('open');
   });
-    
-    // Store and Display player name in the console 
+
+    // Store and Display player name in the console
     $('form.player').submit( function (event) {
         event.preventDefault();
         // Navigate to play console
         window.location.assign("play.html");
-        
+
     });
-  
+
     // Click the start button for the timer to start
-  $('#start').click(function (event) { 
+  $('#start').click(function (event) {
     event.preventDefault();
-    
+
     var min = 0;
     var sec = 30;
 
@@ -43,6 +43,3 @@ $(document).ready(function () {
     };
   });
 });
-
-
-
