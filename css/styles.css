@@ -396,6 +396,7 @@ button:hover {
 #bubbles {
   height: 100%;
   width: 100%;
+  display: none;
 }
 
 #bubbles {
@@ -475,4 +476,3 @@ button:hover {
     margin-left: 50px;
   }
 }
-
