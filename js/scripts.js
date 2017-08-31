@@ -23,7 +23,9 @@ function createBubbles() {
   // Number of bubbles produces at one go
   var frequency = Math.floor(Math.random() * (6 - 1 + 1)) + 10;
   // For appending the rate of speed and veritical speed
-  var randomAnimation = "moveclouds " + verticalSpeed + "s linear infinite, sideWays " + frequency + "s  ease-in-out infinite alternate";
+  var randomAnimation = "moveclouds " + verticalSpeed + 
+                        "s linear infinite, sideWays " +   
+                        frequency + "s  ease-in-out infinite alternate";
 
   $("#bubbles").append('<div class="bubble ' + bubbleSize + '" style="left:' + 
     randomLeft + '%;opacity:0.' + randomOpacity + ';transform:' + randomScale +
@@ -33,7 +35,7 @@ function createBubbles() {
 }
 
 // Create 50 bubbles every 0.5 seconds
-for (i = 0; i < 100; i++) {
+for (i = 0; i < 250; i++) {
   (function(i) {
     window.setTimeout(function() {
       createBubbles();
