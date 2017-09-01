@@ -19,12 +19,21 @@
                 <div class="navbar-header">
                     <img src="assets/images/logo1.jpg" alt="" class="logo">
                     <a class="navbar-brand" href="index.html">Bubble Blaster</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">Menu</button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="index.html">Home</a>
+                            <a href="#" class="about">About</a>
+                            <a href="play.html" class="newGame">New Game</a>
+                        </div>
+                    </div>
                 </div>
 
                 <ul class="nav navbar-nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#" class="about">About</a></li>
-                    <li><a href="play.html" class="newGame">New Game</a></li>
+                    <li><a href="index.html" id="big-home">Home</a></li>
+                    <li><a href="#" class="about" id="big-about">About</a></li>
+                    <li><a href="play.html" class="newGame" id="big-newGame">New Game</a></li>
+
                 </ul>
 
                 <select class="nav navbar-nav bg-colors" name="bg-colors">
@@ -68,7 +77,6 @@
                     <div class="modal-content">
 
                         <div class="modal-header">
-                            <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
                             <h4 class="modal-title">Score</h4>
                         </div>
 
@@ -78,11 +86,11 @@
                         </div>
 
                         <div class="modal-footer">
-                          <button type="button" class="btn btn-default" data-dismiss="modal" onClick="window.location.reload()" >Close</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal" onClick="window.location.reload()">Close</button>
                         </div>
 
                     </div>
-                  
+
                 </div>
             </div>
 
