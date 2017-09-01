@@ -22,7 +22,9 @@ Bubble Blaster is a game where when a user clicks the play button bubbles are ge
 * Copy https://jonnygovish.github.io/Bubble-Blaster-Game to your browser and load it.
 
 ## Known Bugs
-There are no known bugs.
+* Not compatible with mobile devices
+* Some bubbles appear as incomplete
+* Score counter is not 100% accurate
 
 ## Technologies Used
 * HTML
