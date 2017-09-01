@@ -16,6 +16,17 @@ body {
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
+    padding-right: 0%;
+}
+
+
+/*Style .container*/
+
+.container {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 
@@ -24,7 +35,6 @@ body {
 .navbar {
     margin-bottom: 0px;
     max-height: 80px;
-  
 }
 
 .navbar-default {
@@ -33,15 +43,13 @@ body {
     background-color: rgb(248, 248, 248);
     color: white;
     font-weight: bolder;
-    font-size: 18.5px;
-    padding: 5px;
 }
-.navbar-header img{
+
+.navbar-header img {
     float: left;
 }
 
 .navbar-brand {
-    /*color: white;*/
     font-weight: bolder;
     font-size: 30px;
 }
@@ -66,12 +74,11 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-  z-index: 1;
+    z-index: 1;
     background-color: rgba(0, 0, 0, 0.8);
     overflow: hidden;
     visibility: hidden;
     cursor: pointer;
-
     z-index: 1;
 }
 
@@ -104,11 +111,7 @@ body {
     width: 60%;
     margin: auto;
     text-decoration: none;
-    /*    color: black;*/
-    /*    display: block;*/
     position: relative;
-    /*    top: 50%;*/
-    /*    left: 50%;*/
     font-size: 20px;
     color: white;
     transform: translate(-50%, -50%);
@@ -129,7 +132,7 @@ body {
     margin: 15px;
     font-size: 16px;
     opacity: 0.7;
-   cursor: pointer;
+    cursor: pointer;
 }
 
 
@@ -175,18 +178,74 @@ body {
     background-color: rgba(36, 42, 86, 0.6);
 }
 
+
+/*Styles for the dropdown menu for small screens*/
+
+.dropbtn {
+    color: black;
+    border: 2px solid #ddd;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 7px #ddd;
+    width: auto;
+    display: none;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: #ddd;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    float: right;
+    margin-top: -7vh;
+    margin-right: 5%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #f1f1f1;
+}
+
+.show {
+    display: block;
+}
+
+
 /*Styles for the Slogan*/
-.actionCall{
+
+.actionCall {
     text-align: center;
     font-size: 30px;
-font-weight: bolder;
+    font-weight: bolder;
     padding-top: 10px;
 }
+
 
 /*Style carousel*/
 
 .carousel {
-    margin: 20px;
+    margin: 20px 20px 10px 20px;
 }
 
 .carousel .item img {
@@ -213,10 +272,6 @@ a.right.carousel-control {
     margin: auto;
     max-height: 50px;
     text-align: center;
-    /*
-    background-image: url("../assets/images/img2.jpeg");
-    background-size: cover;
-*/
 }
 
 
@@ -276,148 +331,57 @@ button:hover {
     filter: drop-shadow(2px 2px 5px #ddd);
     font-size: 18px;
 }
-#playbtn:hover{
+
+#playbtn:hover {
     filter: drop-shadow(5px 5px 5px white);
 }
 
 
-/*Media Queries for the start and pause button*/
-
-
-/*@media screen and (max-width:375px) {
-    button {
-        width: 30%;
-    }
-    #start {
-        top: 45%;
-        left: 40%;
-        position: absolute;
-    }
-}
-
-@media screen and (min-width:376px and max-width:480px) {
-    button {
-        width: 30%;
-    }
-    #start {
-        top: 60%;
-        left: 35%;
-        position: absolute;
-    }
-}
-
-@media screen and (min-width:481px and max-width:720px) {
-    button {
-        width: 30%;
-    }
-    #start {
-        top: 45%;
-        left: 40%;
-        position: absolute;
-    }
-}
-@media screen and (min-width:721px and max-width:1000px) {
-    button {
-        width: 20%;
-    }
-    #start {
-        top: 50%;
-        left: 40%;
-        position: absolute;
-    }
-}
-*/
-
-
 /*Media Queries for phone and tablet mode*/
 
-
-/*@media screen and (max-width:600px) {
-    body {
-        background-image: url(../assets/images/img2-rotated.jpeg);
-    }
-}
-
-@media screen and (max-width:768px) {
-    #headingNavbar {
-        margin: 5px;
-    }
-    .navbar-default .navbar-brand {
-        font-size: 15px;
-    }
-    .navbar-brand {
-        float: left;
-        height: 0px;
-        margin-bottom: 5px;
-    }
-    .navbar-nav {
-        font-size: 13px;
-        border-left: 0px;
-        margin: 0px;
-    }
-    .nav>li {
+@media screen and (max-width:767px) {
+    .dropbtn {
         display: inline-block;
     }
-    .navbar-default .navbar-nav>li>a {
-        border-right: 0px;
-    }
-    .navbar-nav>li>a {
-        line-height: 1.42857143;
-    }
-    .helloPlayer {
+    #big-home,
+    #big-about,
+    #big-newGame,
+    select {
         display: none;
     }
-}*/
-
-
-/*Media Queries for tablet mode*/
-
-
-/*@media screen and (min-width:760px) {
-    .navbar-default .navbar-brand {
-        font-size: 18px;
+    .colorOverlay {
+        background-color: transparent;
+        padding-right: 0%;
     }
-    .navbar-nav {
+    .playButton {
         font-size: 15px;
-    }
-    .helloPlayer {
-        display: inline;
-        float: right;
-    }
-}*/
-
-
-/*Media Queries for laptop mode*/
-
-
-/*@media screen and (min-width:601px) {
-    body {
-        background-image: url(../assets/images/img2.jpeg);
-    }
-
-}*/
-
-@media (min-width: 768px) {
-    .container {
-        width: 100%;
     }
 }
 
 
-/*Style .container*/
+/*Media Queries for phone mode*/
 
-.container {
-    padding-left: 0;
-    padding-right: 0;
+@media screen and (min-width:321px and max-width:480px) {
+    .navbar-brand,
+    .actionCall {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .navbar-brand,
+    .actionCall {
+        font-size: 22px;
+    }
 }
 
 
 /*Bubble animation*/
 
 #bubbles {
-  height: 100%;
-  width: 100%;
-  display: none;
+    height: 100%;
+    width: 100%;
+    display: none;
 }
 
 #bubbles {
@@ -436,8 +400,9 @@ button:hover {
     background: url(../assets/images/large-bubble.png);
     width: 148px;
     height: 150px;
-    cursor: url(../assets/images/target-with-circle.png),pointer;
+    cursor: url(../assets/images/target-with-circle.png), pointer;
 }
+
 .small {
     background: url(../assets/images/large-bubble.png);
     width: 92px;
@@ -499,7 +464,8 @@ button:hover {
     }
 }
 
-/*Style modal*/
+
+/*Style the Score modal*/
 
 .modal-title {
     font-size: 60px;
@@ -513,4 +479,3 @@ button:hover {
     background-image: none;
     font-size: 15px;
 }
-
