@@ -71,6 +71,8 @@ body {
     overflow: hidden;
     visibility: hidden;
     cursor: pointer;
+
+    z-index: 1;
 }
 
 .overlay.open {
