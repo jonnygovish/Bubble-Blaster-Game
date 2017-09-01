@@ -35,7 +35,7 @@ function createBubbles() {
 }
 
 // Create 50 bubbles every 0.5 seconds
-for (i = 0; i < 250; i++) {
+for (i = 0; i < 550; i++) {
   (function(i) {
     window.setTimeout(function() {
       createBubbles();
