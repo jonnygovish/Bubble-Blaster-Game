@@ -12,6 +12,7 @@
 </head>
 
 <body class="container">
+<<<<<<< HEAD
   <div class="colorOverlay">
     <header>
       <nav class="navbar navbar-default" id="headingNavbar">
@@ -28,6 +29,33 @@
         </ul>
 
         <select class="nav navbar-nav bg-colors" name="bg-colors">
+=======
+    <div class="colorOverlay">
+        <header>
+            <nav class="navbar navbar-default" id="headingNavbar">
+
+                <div class="navbar-header">
+                    <img src="assets/images/logo1.jpg" alt="" class="logo">
+                    <a class="navbar-brand" href="index.html">Bubble Blaster</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">Menu</button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="index.html">Home</a>
+                            <a href="#" class="about">About</a>
+                            <a href="play.html" class="newGame">New Game</a>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html" id="big-home">Home</a></li>
+                    <li><a href="#" class="about" id="big-about">About</a></li>
+                    <li><a href="play.html" class="newGame" id="big-newGame">New Game</a></li>
+
+                </ul>
+
+                <select class="nav navbar-nav bg-colors" name="bg-colors">
+>>>>>>> 5b3221d33ed4a799b9339a13bfb731f6b872c674
                         <option value="default">Background</option>
                         <option value="blue">Han Blue</option>
                         <option value="violet">Indigo Dye</option>
@@ -55,6 +83,7 @@
       </div>
     </header>
 
+<<<<<<< HEAD
 
 
 
@@ -73,6 +102,36 @@
             <div class="modal-header">
               <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
               <h4 class="modal-title">Score</h4>
+=======
+        <div id="main">
+            <div class="scoreDisplay">Score
+            </div>
+            <div class="timer">Timer
+            </div>
+            <button id="start" type="click">Start</button>
+
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <h4 class="modal-title">Score</h4>
+                        </div>
+
+                        <div class="modal-body">
+                            <img src="assets/images/game-over.jpeg" alt="">
+                            <p>Your score:<span class="yourScore"></span> </p>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal" onClick="window.location.reload()">Close</button>
+                        </div>
+
+                    </div>
+
+                </div>
+>>>>>>> 5b3221d33ed4a799b9339a13bfb731f6b872c674
             </div>
 
             <div class="modal-body">
