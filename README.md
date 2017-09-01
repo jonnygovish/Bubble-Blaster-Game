@@ -17,19 +17,19 @@ Bubble Blaster is a game where when a user clicks the play button bubbles are ge
 | Refresh the game | Press the resfresh link | Gaming area is reloaded | 
 
 ## Demo
-This is the landing page for Bubble Blaster
+**This is the landing page for Bubble Blaster**
 ![Bubble Blaster](assets/images/landing-page.png)
 
-This is the about overlay
+**This is the about overlay**
 ![About overlay](assets/images/about-overlay.png)
 
-This is the play console page
+**This is the play console page**
 ![Play Console](assets/images/console-page.png)
 
-This is the game running
+**This is the game running**
 ![Game Running](assets/images/pop-bubbles.png)
 
-This is the score modal
+**This is the score modal**
 ![Score Modal](assets/images/score-modal.png)
 
 
